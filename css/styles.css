@@ -3,9 +3,10 @@ h1 {
   color: #0000ff;
 }
 
-h1, h3, p, h4 {
+h1, h3, p {
   text-align: center;
 }
+
 
 p {
   max-width: 50%;
@@ -44,4 +45,25 @@ input {
 .register-button {
   margin-top: 10px;
   text-align: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+  /* bottom = footer height */
+  padding: 25px;
+}
+
+footer {
+  background-color: darkgrey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
