@@ -7,37 +7,87 @@
 
 <!DOCTYPE html>
 <html>
-  <!--Company name-->
-  <div>
-    <h2>Foodar</h2>
-  </div>
-  <!--Register-->
-  <div>
-    <h1>Register</h1>
-    <p>Please fill out the form below</p>
-  </div>
-  <!--Details-->
-  <div>
-    <h4>Details:</h4>
-    <form >
-      <input type="email" placeholder="Email" required><br>
-      <input type="password" placeholder="Password" required><br>
-      <input type="text" placeholder="First Name" required><br>
-      <input type="text" placeholder="Last Name" required><br>
-    </form>
-  </div>
-  <!--Address-->
-  <div>
-    <h4>Address:</h4>
-    <form>
-      <input type="text" placeholder="Address" required><br>
-      <input type="text" placeholder="Street" required><br>
-      <input type="text" placeholder="City" required><br>
-      <input type="text" placeholder="Zipcode" required><br>
-    </form>
-  </div>
-  <!--Button-->
-  <div>
-    <button>Register</button>
-  </div>
+  <head>
+    <title>Register Page</title>
+    <!--  CSS STYLING 
+      - form labels should be aligned (vertical-align) to the top of associated <input> elements
+      - Add padding to each <input> to provide white space between the input boundaries and contained text
+      - Form elements should be side-by-side; you can float elements if needed. You should end up with 2 columns of input elements. 
+    -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+  <body>
+    
+    <!--Company name-->
+    <div>
+      <h2>Foodar</h2>
+    </div>
+    <!--Register-->
+    <div>
+      <h1>Register</h1>
+      <p>Please fill out the form below</p>
+    </div>
+    <!--Details-->
+    <div>
+      <h4>Details:</h4>
+      <form >
+        <div class="formContainer">
+          <div class="row">
+            <div class="column">
+              <label for="email">Email:</label>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="column">
+              <label for="password">Password:</label>
+              <input type="password" placeholder="Password" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <label for="firstname">First Name:</label>
+              <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="column">
+              <label for="lastname">Last Name:</label>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+          </div> 
+        </form>
+      </div>
+      </div>
+      <!--Address-->
+    <div>
+      <h4>Address:</h4>
+      <form>
+        <div class="formContainer">
+
+          <div class="row">
+            <div class="column">
+              <label for="address">Address:</label>
+              <input type="text" placeholder="Address" required>
+            </div>
+            <div class="column">
+              <label for="street">Street:</label>
+              <input type="text" placeholder="Street" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <label for="city">City:</label>
+              <input type="text" placeholder="City" required>
+            </div>
+            <div class="column">
+              <label for="zipcode">Zipcode:</label>
+              <input type="text" placeholder="Zipcode" required>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+      <!--Button-->
+    <div class="register-button">
+      <button>Register</button>
+    </div>
+  </body>
 </html>
