@@ -67,3 +67,18 @@ footer {
   width: 100%;
   overflow: hidden;
 }
+
+#food-recipe {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  text-shadow: 1px 1px 1px black;
+}
