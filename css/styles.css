@@ -86,7 +86,6 @@ footer {
 .footer-column {
   float: left;
   width: 33.33%;
-  margin-top: 20px;
 }
 
 /* Clear floats after the columns */
@@ -96,3 +95,6 @@ footer {
   clear: both;
 }
 
+a:hover {
+  color: orange;
+}
