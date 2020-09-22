@@ -124,3 +124,9 @@ a:hover {
   float: left;
   margin-top: -22px;
 }
+
+.banner {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
