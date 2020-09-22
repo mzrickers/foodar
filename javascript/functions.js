@@ -19,7 +19,7 @@ function zipcodeChecker(zipcode) {
 //   })
 // };
 
-const bannerArray = ["../images/banner.carAd.png", "../images/banner.schoolAd.png"];
+const bannerArray = ["../images/banner/carAd.png", "../images/banner/schoolAd.png"];
 
 // selects a random ad from banners array
 function simpleBannerSelect(ads) {
@@ -34,11 +34,11 @@ function simpleBannerSelect(ads) {
 
 
 let testOneBanner = simpleBannerSelect(bannerArray);
-// console.log(`One ad: ${testOneBanner}`);
+console.log(`One ad: ${testOneBanner}`);
 
 // Update the DOM for the banner
 
-// let element = document.getElementById("bannerImage");
-// element.setAttribute("src", testOneBanner);
+document.getElementById("bannerImage").setAttribute("src", testOneBanner);
+// element.setAttribute("src", testOneBanner); 
 
-console.log(testOneBanner);
+// console.log(`One ad: ${testOneBanner}`);
