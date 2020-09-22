@@ -54,6 +54,7 @@ html {
 
 body {
   margin: 0 0 100px;
+  padding: 0;
   /* bottom = footer height */
   padding: 25px;
 }
@@ -97,4 +98,29 @@ footer {
 
 a:hover {
   color: orange;
+}
+
+/* navigation bar */
+.nav {
+  background-size: cover;
+  background-color: darkgrey;
+  list-style: none;
+  text-align: right;
+  padding: 20px 0 20px 0;
+}
+
+.nav > li {
+  
+  display: inline-block;
+  padding: 0 25px 0 25px;
+  font-size: 12px;
+}
+
+.nav > li > a:hover {
+  color: orange;
+}
+
+.logo {
+  float: left;
+  margin-top: -22px;
 }
