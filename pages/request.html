@@ -20,57 +20,59 @@
   </div>
  
 
-  <!-- Address Bar -->
-  <div class="request-input">
-    <h4>Email:</h4>
-    <input type="email" placeholder="Email">
-  </div>
+    <!-- Address Bar -->
+  <form id="form">
+    <div class="request-input">
+      <h4>Email:</h4>
+      <input type="email" placeholder="Email">
+    </div>
 
-  <!-- Choose Style -->
-  <div class="radio-input">
-    <h4>Choose style:</h4>
-    <div class="inline-radio">
-      <label for="">Classic</label>
-      <input type="radio">
-    </div>
-    <div class="inline-radio">
-      <label for="">Premium</label>
-      <input type="radio">
-    </div>
-    <div class="inline-radio">
-      <label for="">Royal</label>
-      <input type="radio">
-    </div>
-  </div>
+    <!-- Choose Style -->
+    <div class="radio-input">
+      <h4>Choose style:</h4>
+      <div class="inline-radio">
+        <label for="classic">Classic</label>
+        <input class="food-style" type="radio" id="classic" value="3" name="style">
+      </div>
+      <div class="inline-radio">
+        <label for="premium">Premium</label>
+        <input class="food-style" type="radio" id="premium" value="5" name="style">
+      </div>
+      <div class="inline-radio">
+        <label for="royal">Royal</label>
+        <input class="food-style" type="radio" id="royal" value="10" name="style">
+      </div>
+    </div><br>
 
-  <!-- Restaraunt Bar -->
-  <div class="request-input">
-    <h4>Restaurant:</h4>
-    <input type="text" placeholder="Name">
-  </div>
+    <!-- Restaraunt Bar -->
+    <div class="request-input">
+      <h4>Restaurant:</h4>
+      <input type="text" placeholder="Name">
+    </div>
 
-  <!-- Choose Tip -->
-  <div class="radio-input">
-    <h4>Tip:</h4>
-    <div class="inline-radio">
-      <label for="">10%</label>
-      <input type="radio">
-    </div>
-    <div class="inline-radio">
-      <label for="">15%</label>
-      <input type="radio">
-    </div>
-    <div class="inline-radio">
-      <label for="">20%</label>
-      <input type="radio">
-    </div>
-  </div>
+    <!-- Choose Tip -->
+    <div class="radio-input">
+      <h4>Tip:</h4>
+      <div class="inline-radio">
+        <label for="10">10%</label>
+        <input class="food-tip" type="radio" id="10" value="10" name="tip">
+      </div>
+      <div class="inline-radio">
+        <label for="15">15%</label>
+        <input class="food-tip" type="radio" id="15" value="15" name="tip">
+      </div>
+      <div class="inline-radio">
+        <label for="20">20%</label>
+        <input class="food-tip" type="radio" id="20" value="20" name="tip">
+      </div>
+    </div><br><br>
 
-  <!-- Calculate total -->
-  <div class="calculate-total">
-    <h5>TOTAL: $</h5>
-    <input type="submit" value="REQUEST">
-  </div>
+    <!-- Calculate total -->
+    <div class="total">
+      <h5>TOTAL: $<span id="total"></span></h5>
+      <input type="submit" value="REQUEST">
+    </div>
+  </form>
 
   <!-- Footer -->
   <footer>
@@ -89,5 +91,6 @@
       </div>
     </div>
   </footer>
+  <script src="../javascript/request-function.js"></script>
 </body>
 </html>

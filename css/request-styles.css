@@ -74,3 +74,14 @@ a:hover {
 .request-title > h1 {
   text-align: center;
 }
+
+.request-input > input {
+  margin-left: 3em;
+}
+
+.inline-radio {
+  float: left;
+  width: auto;
+  margin-left: 3em;
+  background-color: darkgrey;
+}
